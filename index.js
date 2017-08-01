@@ -21,6 +21,7 @@ app.get('/profile', (req, res) => (
    res.sendFile(path.join(__dirname + '/templates/profile.html'))
 ))
 
+
 app.get('/rateclasses', (req, res) => (
    res.sendFile(path.join(__dirname + '/templates/account/rate-classes.html'))
 ))
@@ -29,3 +30,8 @@ app.get('/rateclasses', (req, res) => (
 app.get('/user-profile', (req, res) => (
    res.sendFile(path.join(__dirname + '/templates/account/User Profile.html'))
 ))
+
+app.get('/spotlight', (req, res) => (
+   res.sendFile(path.join(__dirname + '/templates/spotlight.html'))
+))
+
