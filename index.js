@@ -1,4 +1,5 @@
 const express = require('express')
+const path = require('path')
 const app = express()
 const port = 1234
 
@@ -9,5 +10,9 @@ const server = app.listen(port, () => {
 })
 
 app.get('/', (req, res) => (
-  res.send('<div>Hello everyone</div>')
+   res.sendFile(path.join(__dirname + '/templates/home.html'))
+))
+
+app.get('/profile', (req, res) => (
+   res.sendFile(path.join(__dirname + '/templates/profile.html'))
 ))
