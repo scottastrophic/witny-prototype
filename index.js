@@ -9,6 +9,8 @@ const server = app.listen(port, () => {
   console.log('Server listening on port', port)
 })
 
+app.use('/styles', express.static('styles'))
+
 app.get('/', (req, res) => (
    res.sendFile(path.join(__dirname + '/templates/home.html'))
 ))
