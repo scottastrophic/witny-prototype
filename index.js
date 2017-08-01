@@ -18,3 +18,7 @@ app.get('/', (req, res) => (
 app.get('/profile', (req, res) => (
    res.sendFile(path.join(__dirname + '/templates/profile.html'))
 ))
+
+app.get('/spotlight', (req, res) => (
+   res.sendFile(path.join(__dirname + '/templates/spotlight.html'))
+))
