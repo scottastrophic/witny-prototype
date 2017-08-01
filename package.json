@@ -10,6 +10,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.15.3"
+    "express": "^4.15.3",
+    "qrcode-reader": "^1.0.2",
+    "qrious": "^4.0.2"
   }
 }
