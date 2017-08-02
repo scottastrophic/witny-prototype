@@ -1,3 +1,7 @@
+body{
+background-color: #448aff;
+}
+
 .one {
 	color: white;
 	margin:0px;
@@ -9,12 +13,16 @@
 
 #top {
 background-color: #AF7AC5;
-    width: 300px;
-    height: 440px;
-    border: 5px solid purple;
+    width: 270px;
+    height: 287px;
+    border: 5px solid #f44336;
     padding: 30px;
     margin: 25px;
 }
+#top h1{
+	margin-bottom: 10px;
+}
+
 
 #rita {
 	right-padding:30px;
@@ -23,6 +31,106 @@ background-color: #AF7AC5;
 }
 
 #rita img {
-	width:150px;
-	height:250px;
+	width:250px;
+	height:150px;
 }
+.two{
+	color: white;
+	font-family:Oswald; 
+}
+#middle{
+	background-color: #AF7AC5;
+	width: 270px;
+	height: 140px;
+	border: 5px solid #f44336;
+	padding: 30px;
+	padding-top: 10px;
+	margin: 25px;
+
+}
+#middle h2{
+	margin-top: 10px;
+	margin-bottom: 10px;
+
+	
+}
+h1, h2{
+	margin:0;
+}
+
+.three{
+	color: white;
+}
+#bottom{
+	background-color: #AF7AC5;
+	width: 270px;
+	height: 150px;
+	border: 5px solid #f44336;
+	padding: 30px;
+	margin: 25px;
+
+}
+.four{
+	color: white;
+}
+#sun{
+	align-content: right;
+}
+#top2{
+	background-color: #AF7AC5;
+	width: 200px;
+	border: 5px solid #f44336;
+	border-style: groove;
+	padding: 30px;
+	margin: 450px;
+	margin-top: -840px;
+}
+ 
+ .five{
+ 	color:white;
+ }
+ #barcode{
+ 	width: 150px;
+ 	height:100px;
+ 	margin-left: 25px;
+    margin-top: 18px;
+ }
+
+ #middle2{
+ 	background-color: #AF7AC5;
+ 	text-align: center;
+	width: 200px;
+	height: 228px;
+	border: 5px solid #f44336;
+	padding: 30px;
+	margin: 450px;
+	margin-top: -400px;
+
+ }
+
+.six{
+	color:white;
+}
+
+#bottom2{
+	background-color: #AF7AC5;
+	width: 200px;
+	height: 350px;
+	border: 5px solid #f44336;
+	padding: 30px;
+	margin: 450px;
+	margin-top: -405px;
+}
+ 
+#bbq *, #kite *, #bubbles *{
+	display: inline;
+
+
+}
+
+
+.events{
+	margin-bottom: 15px;
+}
+
+
