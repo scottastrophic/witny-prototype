@@ -35,6 +35,10 @@ app.get('/spotlight', (req, res) => (
    res.sendFile(path.join(__dirname + '/templates/spotlight.html'))
 ))
 
+app.get('/class-history', (req, res) => (
+   res.sendFile(path.join(__dirname + '/templates/account/class-history.html'))
+))
+
 // Swig test
 app.get('/home', (req, res) => (
   res.render('home', {})
