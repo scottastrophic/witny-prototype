@@ -13,8 +13,8 @@
 
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Spectral:400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
-    <!-- <link href="/styles/index.css" rel="stylesheet"  /> -->
-    <link href="/styles/app.css" rel="stylesheet"  />
+    <link href="/styles/index.css" rel="stylesheet"  />
+    <link href="/styles/profile.css" rel="stylesheet"  />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/fullcalendar.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link
@@ -54,20 +54,13 @@
 </script>
 </head>
 <body>
-    <!-- <h1>{% block title %}{% endblock %}</h1> -->
-    <!-- <h1>App</h1> -->
-    <!-- <div id="navBar">
-      <button class="hamburger-button qp-ui qp-ui-side-nav-toggle"><i class="material-icons material-spec-icon" title="Show navigation">menu</i></button>
-    </div> -->
-    <!-- <ul id="nav">
-      <li><a href="/">Home</a></li>
-      <li><a href="/profile-swig">User Profile</a></li>
-      <li><a href="/schedule">Schedule</a></li>
-      <li><a href="/rate-classes">Rate Classes</a></li>
-      <li><a href="/spotlight">Spotlight</a></li>
-    </ul> -->
-    <div class="main">
-        {% block body %}{% endblock %}
+  <div class="homePage">
+    <div id="logo">
+      Spotlight
     </div>
+    <button class="mdc-button mdc-button--raised">
+      <a href="/profile-swig">SCAN YOUR QR CODE</a>
+    </button>
+  </div>
 </body>
 </html>

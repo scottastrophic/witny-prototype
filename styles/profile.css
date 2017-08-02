@@ -1,11 +1,19 @@
-body {
-  color: white;
+.round {
+	border-radius:50%;
 }
 
-.container {
-  background-color: blue;
+img{
+	height:250px;
+	width:300px;
 }
 
-a {
-  color: red;
+.rectangle {
+	height:150px;
+	width: 220px;
+	border:1px solid black;
+	background-color: white;
+}
+
+.block {
+	display:block;
 }
