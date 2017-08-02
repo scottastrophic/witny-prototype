@@ -3,8 +3,39 @@
 <head>
     <meta charset="utf-8" />
     <title>{% block title %}{% endblock %}</title>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/fullcalendar.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Spectral:400,700" rel="stylesheet">
     <link href="/styles/index.css" rel="stylesheet"  />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/fullcalendar.min.css" rel="stylesheet" />
+
+    <script>
+  $(document).ready(function() {
+
+        // Page is now ready, initialize the calendar
+        $('#calendar').fullCalendar({
+            events: [
+               {
+                   title  : 'event1',
+                   start  : '2017-08-01'
+                  //  allDay: true,
+               },
+               {
+                   title  : 'event2',
+                   start  : '2017-08-02T10:30:00',
+                   end    : '2017-08-02T17:30:00'
+               },
+               {
+                   title  : 'event3',
+                   start  : '2017-08-03T12:30:00',
+                   allDay : false // will make the time show
+               }
+           ]
+        })
+
+    });
+</script>
 </head>
 <body>
     <!-- <h1>{% block title %}{% endblock %}</h1> -->

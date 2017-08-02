@@ -18,39 +18,27 @@ app.use('/styles', express.static('styles'))
 app.use('/images', express.static('images'))
 
 // Routes
-app.get('/', (req, res, next) => (
+app.get('/', (req, res) => (
   res.sendFile(path.join(__dirname + '/templates/home.html'))
-  next()
 ))
 
-app.get('/profile', (req, res, next) => (
+app.get('/profile', (req, res) => (
    res.sendFile(path.join(__dirname + '/templates/profile.html'))
-   next()
 ))
 
-app.get('/rateclasses', (req, res, next) => (
+app.get('/rateclasses', (req, res) => (
    res.sendFile(path.join(__dirname + '/templates/account/rate-classes.html'))
-   next()
 ))
 
-app.get('/user-profile', (req, res, next) => (
+app.get('/user-profile', (req, res) => (
    res.sendFile(path.join(__dirname + '/templates/account/User Profile.html'))
-   next()
 ))
 
-app.get('/spotlight', (req, res, next) => (
+app.get('/spotlight', (req, res) => (
    res.sendFile(path.join(__dirname + '/templates/spotlight.html'))
-   next()
 ))
 
 // Swig test
-app.get('/test', (req, res, next) => (
+app.get('/test', (req, res) => (
   res.render('test', {})
-  next()
 ))
-
-// Error Handling
-app.use(err, req, res, next) => (
-  console.error('Express Error')
-  res.send(err)
-)
