@@ -1,27 +1,28 @@
 
-/*img.round{
-	border-radius:100%;
-	}
-	img{
-		height: 350px;
-		width: 200;
-	}*/
-	.rectangle{
-		height:50px;
-		width: 150px;
-		border:1px solid black;
-		background-color: pink;
-		background-color: pink;
-        border-radius:30%;
-        padding:10px;
-        font-size: x-large;
-        text-align:-webkit-center;
-        margin:0 auto;
+.rectangle {
+	height:50px;
+	width: 150px;
+	border:1px solid black;
+	background-color: pink;
+	background-color: pink;
+  border-radius:30%;
+  padding:10px;
+  font-size: x-large;
+  text-align: center;
+  margin: 0 auto 20px;
+	text-decoration: none;
+	color: white;
+}
 
-	}
-	.block{
-		display:block;
-	}
-	#bg{
-		background-image: url("/images/RI.jpg");
-	}
+.block {
+	display:block;
+}
+
+
+.linkContainer {
+	margin-top: 50px;
+}
+
+#bg{
+	background-image: url("/images/RI.jpg");
+}
