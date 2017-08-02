@@ -1,0 +1,27 @@
+#container {
+  margin: 0px auto;
+  width: 500px;
+  height: 375px;
+  border: 10px #333 solid;
+}
+#videoElement {
+  width: 500px;
+  height: 375px;
+  background-color: #666;
+}
+
+body {
+  font-family: Oswald;
+  text-align: center;
+}
+button {
+  margin-top: 25px;
+  padding: 10px;
+}
+button div {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+img {
+  width: 100px;
+}

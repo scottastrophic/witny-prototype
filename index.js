@@ -39,6 +39,10 @@ app.get('/class-history', (req, res) => (
    res.sendFile(path.join(__dirname + '/templates/account/class-history.html'))
 ))
 
+app.get('/scan', (req, res) => (
+   res.sendFile(path.join(__dirname + '/templates/scan.html'))
+))
+
 // Swig test
 app.get('/home', (req, res) => (
   res.render('home', {})
