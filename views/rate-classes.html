@@ -1,0 +1,49 @@
+{% extends 'account.html' %}
+
+{% block accountBody %}
+
+<div>
+  <form>
+  	<label><input type="radio" name="rating" /> 1 Star</label>
+  	<label><input type="radio" name="rating" /> 2 Stars</label>
+  	<label><input type="radio" name="rating" /> 3 Stars</label>
+  	<label><input type="radio" name="rating" /> 4 Stars</label>
+  	<label><input type="radio" name="rating" /> 5 Stars</label>
+  </form>
+
+  <div class="mdc-radio">
+    <input class="mdc-radio__native-control" type="radio" id="radio-1" name="radios" checked>
+    <div class="mdc-radio__background">
+      <div class="mdc-radio__outer-circle"></div>
+      <div class="mdc-radio__inner-circle"></div>
+    </div>
+  </div>
+  <label id="radio-1-label" for="radio-1">Radio 1</label>
+
+  <div class="mdc-radio">
+    <input class="mdc-radio__native-control" type="radio" id="radio-1" name="radios" checked>
+    <div class="mdc-radio__background">
+      <div class="mdc-radio__outer-circle"></div>
+      <div class="mdc-radio__inner-circle"></div>
+    </div>
+  </div>
+  <label id="radio-1-label" for="radio-1">Radio 1</label>
+
+  <div class="mdc-radio">
+    <input class="mdc-radio__native-control" type="radio" id="radio-1" name="radios" checked>
+    <div class="mdc-radio__background">
+      <div class="mdc-radio__outer-circle"></div>
+      <div class="mdc-radio__inner-circle"></div>
+    </div>
+  </div>
+  <label id="radio-1-label" for="radio-1">Radio 1</label>
+
+  <h4>Optional: Leave Feedback</h4>
+  <div class="mdc-textfield mdc-textfield--multiline">
+  <textarea id="multi-line" class="mdc-textfield__input" rows="8" cols="40"></textarea>
+  <label for="multi-line" class="mdc-textfield__label">Multi-line Label</label>
+</div>
+
+</div>
+
+{% endblock %}

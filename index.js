@@ -27,12 +27,8 @@ app.get('/profile', (req, res) => (
    res.sendFile(path.join(__dirname + '/templates/profile.html'))
 ))
 
-app.get('/rateclasses', (req, res) => (
+app.get('/rate-classes', (req, res) => (
    res.sendFile(path.join(__dirname + '/templates/account/rate-classes.html'))
-))
-
-app.get('/user-profile', (req, res) => (
-   res.sendFile(path.join(__dirname + '/templates/account/User Profile.html'))
 ))
 
 app.get('/spotlight', (req, res) => (
@@ -44,6 +40,10 @@ app.get('/class-history', (req, res) => (
 ))
 
 // Swig test
+app.get('/home', (req, res) => (
+  res.render('home', {})
+))
+
 app.get('/test', (req, res) => (
   res.render('test', {})
 ))
@@ -51,6 +51,15 @@ app.get('/test', (req, res) => (
 app.get('/schedule', (req, res) => (
   res.render('schedule', {})
 ))
+
 app.get('/average-class-rating', (req, res) => (
    res.sendFile(path.join(__dirname + '/templates/account/average-class-rating.html'))
+   ))
+
+
+app.get('/profile-swig', (req, res) => (
+  res.render('profile', {})
+))
+app.get('/rate-classes-swig', (req, res) => (
+  res.render('rate-classes', {})
 ))
