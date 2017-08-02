@@ -50,3 +50,7 @@ app.get('/class-history', (req, res) => (
 app.get('/spotlight', (req, res) => (
    res.render('spotlight', {})
 ))
+
+app.get('/scan', (req, res) => (
+   res.sendFile(path.join(__dirname + '/templates/scan.html'))
+))
