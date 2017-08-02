@@ -1,13 +1,33 @@
 {% extends 'index.html' %}
 
-{% block title %}Test Page{% endblock %}
+<h2>Test Page</h2>
 
 {% block body %}
-<div>
+
+<!-- <div>
   This is the body of the test page.
+</div>
+<div>Toolbar goes here</div>
 
-  <div id="calendar">
+<h1 class="mdc-typography--display1">Hello, World!</h1>
+    <button type="button" class="mdc-button mdc-button--raised mdc-button--primary">
+      Press Me
+    </button> -->
 
+    <nav class="mdc-permanent-drawer mdc-typography">
+  <div class="mdc-permanent-drawer__toolbar-spacer"></div>
+  <div class="mdc-permanent-drawer__content">
+    <nav id="icon-with-text-demo" class="mdc-list">
+      <a class="mdc-list-item mdc-permanent-drawer--selected" href="#">
+        <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">inbox</i>Inbox
+      </a>
+      <a class="mdc-list-item" href="#">
+        <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">star</i>Star
+      </a>
+    </nav>
   </div>
+</nav>
+<div>
+  Toolbar and page content go inside here.
 </div>
 {% endblock %}

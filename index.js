@@ -16,6 +16,7 @@ app.set('views', __dirname + '/views')
 // Serving up static assets
 app.use('/styles', express.static('styles'))
 app.use('/images', express.static('images'))
+app.use('/material-components-web', express.static('node_modules/material-components-web'))
 
 // Routes
 app.get('/', (req, res) => (
@@ -41,4 +42,8 @@ app.get('/spotlight', (req, res) => (
 // Swig test
 app.get('/test', (req, res) => (
   res.render('test', {})
+))
+
+app.get('/schedule', (req, res) => (
+  res.render('schedule', {})
 ))
