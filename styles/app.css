@@ -1,0 +1,102 @@
+body {
+  font-family: 'Lato', sans-serif;
+  margin: 0;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Spectral', sans-serif;
+}
+
+.mainContainer {
+  width:90%;
+  margin: 0 auto;
+}
+
+.topNav {
+  background-color: #005ecb;
+  height: 50px;
+  width: 100%;
+}
+
+#iconContainer {
+  width: 50px;
+  height: 50px;
+  cursor:pointer;
+  display: block;
+}
+#iconContainer .material-icons {
+  width: 100%;
+  color: white;
+  font-size: 40px;
+  margin-top: 4px;
+}
+
+.profileTopContainer {
+  /*width: 100%;*/
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #448aff;
+  color: #fff;
+}
+
+.round {
+  display: inline-block;
+  border-radius: 200px;
+  height: 200px;
+  width: 200px;
+  overflow: hidden;
+}
+
+.round > img {
+  width: 300px;
+  margin-left: -25px;
+}
+
+.profileTopContainer > h1 {
+  display: inline-block;
+  font-size: 45px;
+  text-align: center;
+}
+
+.fc-unthemed td.fc-today {
+  background-color: rgba(131, 185, 255, 0.2) !important;
+}
+
+.fc-event {
+  background-color: #448aff !important;
+  border: none !important;
+}
+
+.fc-toolbar .fc-left {
+  text-transform: uppercase;
+}
+
+.fc-button-group > button, .fc-right > button {
+  background-color: #f44336;
+  background-image: none;
+  color: white;
+  text-shadow: none;
+}
+
+.fc-right > button {
+  padding-top: 2px;
+}
+
+.fc-right > button {
+  text-transform: uppercase;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.fc-button-group > button > span, .fc-right > button > span {
+  color: white;
+}
+
+#calendarContainer {
+  width: 90%;
+  margin: 30px auto 0;
+}
