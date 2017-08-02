@@ -52,10 +52,14 @@ app.get('/schedule', (req, res) => (
   res.render('schedule', {})
 ))
 
+app.get('/average-class-rating', (req, res) => (
+   res.sendFile(path.join(__dirname + '/templates/account/average-class-rating.html'))
+   ))
+
+
 app.get('/profile-swig', (req, res) => (
   res.render('profile', {})
 ))
-
 app.get('/rate-classes-swig', (req, res) => (
   res.render('rate-classes', {})
 ))
