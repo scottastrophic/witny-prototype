@@ -1,22 +1,20 @@
-{% extends 'account.html' %}
+{% extends 'index.html' %}
 
-<h2>Profile Page</h2>
+{% block body %}
 
-{% block accountBody %}
+<div class="profileTopContainer">
+  <div class="round">
+    <img src= "/images/witnyPro.jpg" />
+  </div>
+  <h1>Rita</h1>
+</div>
 
 <div>
-  <!-- put in stuff from templates folder here -->
-  <!-- <img src= "/images/witnyPro.jpg" class="round"/> -->
-  <!-- <div>Profile</div> -->
-  <!-- <button class="mdc-button mdc-button--raised">
-    Raised button
-  </button>
-  <a class="rectangle block" href="/schedule">Schedule</a> -->
+  <a class="rectangle block" href="/schedule">Schedule</a>
 
-  <!-- <div class="topProfile">
-    <img src= "/images/witnyPro.jpg" class="round"/>
-    <span class="name">Rita</span>
-  </div> -->
+  <a class="rectangle block" href="/rate-classes-swig">Rate Class</a>
+
+  <a class="rectangle block" href="/class-history-swig">Class History</a>
 
 </div>
 {% endblock %}

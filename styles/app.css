@@ -9,6 +9,30 @@ h3 {
   font-family: 'Spectral', sans-serif;
 }
 
+.mainContainer {
+  width:90%;
+  margin: 0 auto;
+}
+
+.topNav {
+  background-color: #005ecb;
+  height: 50px;
+  width: 100%;
+}
+
+#iconContainer {
+  width: 50px;
+  height: 50px;
+  cursor:pointer;
+  display: block;
+}
+#iconContainer .material-icons {
+  width: 100%;
+  color: white;
+  font-size: 40px;
+  margin-top: 4px;
+}
+
 .profileTopContainer {
   /*width: 100%;*/
   text-align: center;
@@ -37,4 +61,42 @@ h3 {
   display: inline-block;
   font-size: 45px;
   text-align: center;
+}
+
+.fc-unthemed td.fc-today {
+  background-color: rgba(131, 185, 255, 0.2) !important;
+}
+
+.fc-event {
+  background-color: #448aff !important;
+  border: none !important;
+}
+
+.fc-toolbar .fc-left {
+  text-transform: uppercase;
+}
+
+.fc-button-group > button, .fc-right > button {
+  background-color: #f44336;
+  background-image: none;
+  color: white;
+  text-shadow: none;
+}
+
+.fc-right > button {
+  padding-top: 2px;
+}
+
+.fc-right > button {
+  text-transform: uppercase;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.fc-button-group > button > span, .fc-right > button > span {
+  color: white;
+}
+
+#calendarContainer {
+  width: 90%;
+  margin: 30px auto 0;
 }

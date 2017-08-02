@@ -59,3 +59,7 @@ app.get('/profile-swig', (req, res) => (
 app.get('/rate-classes-swig', (req, res) => (
   res.render('rate-classes', {})
 ))
+
+app.get('/class-history-swig', (req, res) => (
+  res.render('class-history', {})
+))
