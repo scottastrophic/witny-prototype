@@ -52,5 +52,6 @@ app.get('/spotlight', (req, res) => (
 ))
 
 app.get('/scan', (req, res) => (
-   res.sendFile(path.join(__dirname + '/templates/scan.html'))
+  //  res.sendFile(path.join(__dirname + '/templates/scan.html'))
+   res.render('scan', {})
 ))
