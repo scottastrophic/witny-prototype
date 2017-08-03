@@ -146,3 +146,8 @@ h1, h2{
 .events{
 	margin-bottom: 15px;
 }
+
+.spotlightContainer {
+  width: 745px;
+  margin: 0 auto;
+}
