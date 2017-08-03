@@ -2,7 +2,7 @@
   margin: 0px auto;
   width: 500px;
   height: 375px;
-  border: 10px #333 solid;
+  border: 10px #f44336 solid;
 }
 #videoElement {
   width: 500px;
@@ -24,4 +24,14 @@ button div {
 }
 img {
   width: 100px;
+}
+
+html {
+  background-color: #448aff;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: black;
 }

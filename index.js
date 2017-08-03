@@ -18,56 +18,40 @@ app.use('/styles', express.static('styles'))
 app.use('/images', express.static('images'))
 app.use('/material-components-web', express.static('node_modules/material-components-web'))
 
-// Routes
-app.get('/', (req, res) => (
-  res.sendFile(path.join(__dirname + '/templates/home.html'))
-))
-
-app.get('/profile', (req, res) => (
-   res.sendFile(path.join(__dirname + '/templates/profile.html'))
-))
-
-app.get('/rate-classes', (req, res) => (
-   res.sendFile(path.join(__dirname + '/templates/account/rate-classes.html'))
-))
-
-app.get('/spotlight', (req, res) => (
-   res.sendFile(path.join(__dirname + '/templates/spotlight.html'))
-))
-
-app.get('/class-history', (req, res) => (
-   res.sendFile(path.join(__dirname + '/templates/account/class-history.html'))
-))
-
-app.get('/scan', (req, res) => (
-   res.sendFile(path.join(__dirname + '/templates/scan.html'))
-))
-
 // Swig test
-app.get('/home', (req, res) => (
+app.get('/', (req, res) => (
   res.render('home', {})
 ))
 
-app.get('/test', (req, res) => (
-  res.render('test', {})
-))
+// app.get('/test', (req, res) => (
+//   res.render('test', {})
+// ))
 
 app.get('/schedule', (req, res) => (
   res.render('schedule', {})
 ))
 
 app.get('/average-class-rating', (req, res) => (
-   res.sendFile(path.join(__dirname + '/templates/account/average-class-rating.html'))
-   ))
+  res.sendFile(path.join(__dirname + '/templates/account/average-class-rating.html'))
+))
 
-
-app.get('/profile-swig', (req, res) => (
+app.get('/profile', (req, res) => (
   res.render('profile', {})
 ))
-app.get('/rate-classes-swig', (req, res) => (
+
+app.get('/rate-classes', (req, res) => (
   res.render('rate-classes', {})
 ))
 
-app.get('/class-history-swig', (req, res) => (
+app.get('/class-history', (req, res) => (
   res.render('class-history', {})
+))
+
+app.get('/spotlight', (req, res) => (
+   res.render('spotlight', {})
+))
+
+app.get('/scan', (req, res) => (
+  //  res.sendFile(path.join(__dirname + '/templates/scan.html'))
+   res.render('scan', {})
 ))

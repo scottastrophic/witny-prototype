@@ -20,9 +20,24 @@
 
 
 .linkContainer {
-	margin-top: 50px;
+	margin: 50px;
+	text-align: center;
 }
 
 #bg{
 	background-image: url("/images/RI.jpg");
+}
+
+.linkContainer button {
+  max-width: 400px;
+  background-color: #f44336;
+	display: block;
+	width: 100%;
+	margin: 0 auto 20px;
+	font-size: 20px;
+}
+
+.linkContainer button a {
+  text-decoration: none;
+  color: white;
 }
